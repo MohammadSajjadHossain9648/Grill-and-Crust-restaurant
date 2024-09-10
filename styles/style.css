@@ -1,5 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.sans-font{
+/* common factor */
+*{
+    margin: 0;
+    padding: 0;
     font-family: "Work Sans", sans-serif;
+}
+:root{
+    --header-color: rgb(255, 255, 255);
+    --button-color: rgb(82, 195, 3);
+}
+.btn{
+    Font-size: 13px;
+    Font-weight: 600;
+    background-color: var(--button-color);
+    color: var(--header-color);
+    border: none;
+    border-radius: 8px;
+    padding: 14px 22px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+/* banner section */
+.hero{
+    height: 615px;
+    background-image: linear-gradient(0deg, rgb(16, 16, 16) -19.5%,rgba(16, 16, 16, 0) 100%), url('../assets/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .hero_content{
+    width: 685px;
+    text-align: center;
+    color: var(--header-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.hero .hero_content .hero_subtitle{
+    Font-weight: 600;
+    Font-size: 22px;
+    opacity: 0.8;
+}
+.hero .hero_content .hero_title{
+    Font-weight: 700;
+    Font-size: 42px;
+}
+.hero .hero_content .hero_description{
+    Font-weight: 500;
+    Font-size: 12px;
+    opacity: 0.7;
 }
