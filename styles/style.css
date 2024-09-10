@@ -11,6 +11,7 @@
     --button-color: rgb(82, 195, 3);
     --primary-color: rgb(16, 16, 16);
     --primary-shade-color: rgba(82, 195, 3, 0.15);
+    --border-color: rgba(16, 16, 16, 0.2);
 }
 .btn{
     Font-size: 13px;
@@ -87,7 +88,6 @@
     font-weight: 700;
 }
 
-
 .card .card_box_container{
     margin: 42px 0;
     display: flex;
@@ -118,4 +118,55 @@
     opacity: 0.7;
     font-size: 12px;
     font-weight: 500;
+}
+
+
+
+/* about section */
+.about{
+    display: flex;
+    color: var(--primary-color);
+}
+.about .about_left_container{
+    width: 640px;
+    height: 450px;
+}
+.about .about_left_container img{
+    width: 100%;
+}
+
+.about .about_right_container{
+    width: 640px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.about .about_right_container .about_title{
+    width: 80%;
+    font-size: 32px;
+    font-weight: 700;
+}
+.about .about_right_container .about_description{
+    opacity: 0.6;
+    width: 80%;
+    font-size: 16px;
+    font-weight: 500;
+}
+.about .about_right_container .about_advertisement{
+    opacity: 0.7;
+    font-size: 22px;
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+    padding: 20px 244px;
+}
+
+.about .about_right_container .about_icons{
+    cursor: pointer;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
 }
